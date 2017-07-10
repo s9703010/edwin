@@ -23,18 +23,15 @@ var server = app.listen(process.env.PORT || 8080, function() {
 bot.on('message', function(event) {
   if (event.message.type = 'text') {
     var msg = event.message.text;
+var sendMsg = '吵';
     event.reply(msg).then(function(data) {
       // success 
       console.log(msg);
+console.log('send: '+sendMsg);
     }).catch(function(error) {
       // error 
       console.log('error');
     });
   }
-etTimeout(function(){
-    var userId = '6365390938740';
-    var sendMsg = '要發送的文字';
-    bot.push(userId,sendMsg);
-    console.log('send: '+sendMsg);
-},5000);
+
 });
