@@ -25,7 +25,8 @@ bot.on('message', function(event) {
     var msg = event.message.text;
     event.reply(meg).then(function(data) {
       // success 
-      console.log('§A¦n');
+      console.log(meg);
+	console.log(meg);
     }).catch(function(error) {
       // error 
       console.log('error');
