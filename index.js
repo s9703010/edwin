@@ -2,9 +2,9 @@ var linebot = require('linebot');
 var express = require('express');
 
 var bot = linebot({
-  channelId:"1523559534",
-  channelSecret:"3bb342be42492248e1dd6d42af2909de",
-  channelAccessToken: "LjKptyesdfdUxTP/iYJCch+23XUBdIaz5xP8/icp6pCqxpyVsDgxmkrHPNLI1bCjejKCycMq7DvV0DOY7sI5F/+tvwCsSPTlwHRfHJF4HpQ2AWRs0GJ7++Pz4UwlS4BNLo3eWGOxEZw2rF0u5aMtNQdB04t89/1O/w1cDnyilFU="
+  channelId:'1523559534',
+  channelSecret:'3bb342be42492248e1dd6d42af2909de',
+  channelAccessToken: 'LjKptyesdfdUxTP/iYJCch+23XUBdIaz5xP8/icp6pCqxpyVsDgxmkrHPNLI1bCjejKCycMq7DvV0DOY7sI5F/+tvwCsSPTlwHRfHJF4HpQ2AWRs0GJ7++Pz4UwlS4BNLo3eWGOxEZw2rF0u5aMtNQdB04t89/1O/w1cDnyilFU='
 });
 bot.on('message', function(event) {
   console.log(event); //把收到訊息的 event 印出來看看
@@ -29,8 +29,8 @@ bot.on('message', function(event) {
       // error 
       console.log('error');
     });setTimeout(function(){
-    var userId = '使用者 ID';
-    var sendMsg = '吵屁阿';
+    var userId = "";
+    var sendMsg = "XD";
     bot.push(userId,sendMsg);
     console.log('send: '+sendMsg);
 },5000);
