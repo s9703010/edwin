@@ -23,9 +23,9 @@ var server = app.listen(process.env.PORT || 8080, function() {
 bot.on('message', function(event) {
   if (event.message.type = 'text') {
     var msg = event.message.text;
-    event.reply("你好").then(function(data) {
+    event.reply(meg).then(function(data) {
       // success 
-      console.log(msg);
+      console.log("你好");
     }).catch(function(error) {
       // error 
       console.log('error');
