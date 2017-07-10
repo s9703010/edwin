@@ -32,3 +32,4 @@ bot.on('message', function(event) {
     });
   }
 });
+event.reply({ type: 'text', text: 'Hello, world' });
