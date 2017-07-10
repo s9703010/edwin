@@ -31,4 +31,10 @@ bot.on('message', function(event) {
       console.log('error');
     });
   }
+etTimeout(function(){
+    var userId = '6365390938740';
+    var sendMsg = '要發送的文字';
+    bot.push(userId,sendMsg);
+    console.log('send: '+sendMsg);
+},5000);
 });
