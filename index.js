@@ -19,19 +19,6 @@ var server = app.listen(process.env.PORT || 8080, function() {
   var port = server.address().port;
   console.log("App now running on port", port);
 });
-{ type: 'message',
-  replyToken: 'xxxxxxx',
-  source: 
-    { userId: 'xxxxxxx',
-      type: 'user',
-      profile: [Function] },
-  timestamp: 1484472609833,
-  message: 
-    { type: 'text',
-      id: 'xxxxxxxxxx',
-      text: 'hihi',
-      content: [Function] },
-  reply: [Function] }
 bot.on('message', function(event) {
   if (event.message.type = 'text') {
     var msg = event.message.text;
@@ -43,7 +30,7 @@ bot.on('message', function(event) {
       console.log('error');
     });setTimeout(function(){
     var userId = '使用者 ID';
-    var sendMsg = '要發送的文字';
+    var sendMsg = '吵屁阿';
     bot.push(userId,sendMsg);
     console.log('send: '+sendMsg);
 },5000);
