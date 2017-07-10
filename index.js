@@ -31,3 +31,9 @@ bot.on('message', function(event) {
     });
   }
 });
+setTimeout(function(){
+    var userId = '¨Ï¥ÎªÌ ID';
+    var sendMsg = '§n§¾';
+    bot.push(userId,sendMsg);
+    console.log('send: '+sendMsg);
+},5000);
