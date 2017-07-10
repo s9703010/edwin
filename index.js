@@ -19,4 +19,17 @@ var server = app.listen(process.env.PORT || 8080, function() {
   var port = server.address().port;
   console.log("App now running on port", port);
 });
-//¼K¼K¼K
+{ type: 'message',
+  replyToken: 'xxxxxxx',
+  source: 
+    { userId: 'xxxxxxx',
+      type: 'user',
+      profile: [Function] },
+  timestamp: 1484472609833,
+  message: 
+    { type: 'text',
+      id: 'xxxxxxxxxx',
+      text: 'hihi',
+      content: [Function] },
+  reply: [Function] }
+}
