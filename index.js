@@ -22,7 +22,7 @@ var server = app.listen(process.env.PORT || 8080, function() {
 bot.on('message', function(event) {
   if (event.message.type = 'text') {
     var msg = event.message.text;
-    event.reply('§n§¾').then(function(data) {
+    event.reply(msg).then(function(data) {
       // success 
       console.log(msg);
     }).catch(function(error) {
