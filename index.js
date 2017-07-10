@@ -23,7 +23,7 @@ var server = app.listen(process.env.PORT || 8080, function() {
 bot.on('message', function(event) {
   if (event.message.type = 'text') {
     var msg = event.message.text;
-    event.reply(msg).then(function(data) {
+    event.reply("§A¦n").then(function(data) {
       // success 
       console.log(msg);
     }).catch(function(error) {
@@ -32,4 +32,4 @@ bot.on('message', function(event) {
     });
   }
 });
-event.reply({ type: 'text', text: 'Hello, world' });
+
