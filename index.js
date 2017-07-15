@@ -114,21 +114,7 @@ bot.on('message',function(event)
 				]
 			}
 		}
-		 event.reply(msg).then(function(data){
-            colsole.log(msg);
-        }).catch(function(error){
-            console.log('error');   //若有錯誤，catch下來後註記在log中
-        });
-    }
-    else if (event.message.type = 'text'){
-        var msg = event.message.text + " 收到！";
-        event.reply(msg).then(function(data){
-            colsole.log(msg);
-        }).catch(function(error){
-            console.log('error');   //若有錯誤，catch下來後註記在log中
-        });
-    }
-	
+	}
 });
 
 
