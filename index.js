@@ -60,7 +60,7 @@ bot.on('message',function(event){
             // console.log('error');   //若有錯誤，catch下來後註記在log中
         // });
     // }
-	else if (event.message.type = 'text' && event.message.text == "飲食問題")
+	if (event.message.type = 'text' && event.message.text == "飲食問題")
 	{
 		 var meg = 
 		{
