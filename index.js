@@ -42,22 +42,48 @@ bot.on('message',function(event){
     
 if (event.message.type = 'text' && event.message.text == "我想鍛鍊"){
         
-var msg = {"type": "template",
-"altText": "您好，初次見面！",
-"template":{"type": "buttons",
-"title": "您好，初次見面！",
-"text": "請問您想使用哪一項功能呢？",
-"actions":[
+var msg = 
+{
+	"type": "template",
+	"altText": "您好，初次見面！",
+	"template":{"type": "buttons",
+	"title": "您好，初次見面！",
+	"text": "請問您想了解哪項問題呢？",
+	"actions":
+	[
  {
- "type": "postback", "label":"知識詢問", "data": "#"
+	 "type": "postback", 
+	 "label":"飲食問題", 
+	 "data": "#"
 },
- {"type": "postback",
-"label": "鍛鍊姿勢查詢",
-  "data": "#"
+ {
+	 "type": "postback",
+	 "label": "訓練問題",
+	 "data": "#"
    }
-      ]
+    ]
      }
         }
+{
+  "type": "template",
+  "altText": "this is a confirm template",
+  "template": {
+      "type": "confirm",
+      "text": "Are you sure?",
+      "actions": [
+          {
+            "type": "message",
+            "label": "Yes",
+            "text": "yes"
+          },
+          {
+            "type": "message",
+            "label": "No",
+            "text": "no"
+          }
+      ]
+  }
+}
         
 event.reply(msg).then(function(data){colsole.log(msg);
 }).catch(function(error){
