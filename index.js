@@ -83,6 +83,16 @@ bot.on('message',function(event){
                         "type": "postback",
                         "label": "計算TDEE每日總消耗熱量",
                         "data": "#"
+                    },
+                    {
+                        "type": "postback",
+                        "label": "減脂應該如何調整飲食?",
+                        "data": "#"
+                    ,
+                    {
+                        "type": "postback",
+                        "label": "增肌應該如何調整飲食?",
+                        "data": "#"
                     }
                 ]
             }
