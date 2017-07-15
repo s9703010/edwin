@@ -80,7 +80,7 @@ bot.on('message',function(event){
 
 // bot.on('message',function(event))
 // {
-    收到通關密語後，建立一個選單讓使用者選擇想要使用的功能
+    //收到通關密語後，建立一個選單讓使用者選擇想要使用的功能
     
 // if (event.message.type = 'text' && event.message.text == "我想鍛鍊")
 // {
@@ -164,7 +164,7 @@ bot.on('message',function(event){
 
         // }).catch(function(error){
             // console.log('error');
-   若有錯誤，catch下來後註記在log中
+   //若有錯誤，catch下來後註記在log中
         // });
     // }
     
