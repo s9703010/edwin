@@ -29,7 +29,8 @@ console.log("App now running on port", port);
 });
 bot.on('message',function(event){
     //收到通關密語後，建立一個選單讓使用者選擇想要使用的功能
-    if (event.message.type = 'text' && event.message.text == "我想鍛鍊"){
+    if (event.message.type = 'text' && event.message.text == "我想鍛鍊")
+	{
         var msg = 
 		{
 			"type": "template",
@@ -91,12 +92,12 @@ bot.on('message',function(event){
 						"type": "postback",
 						"label": "減脂應該如何調整飲食?",
 						"data": "#"
-					},
-					{
-						"type": "postback",
-						"label": "增肌應該如何調整飲食?",
-						"data": "#"
-					}
+					// },
+					// {
+						// "type": "postback",
+						// "label": "增肌應該如何調整飲食?",
+						// "data": "#"
+					// }
 				]
 			}
 		}
