@@ -64,13 +64,16 @@ var msg =
     ]
      }
         }
+var msg = 
 {
   "type": "template",
   "altText": "this is a confirm template",
-  "template": {
+  "template": 
+  {
       "type": "confirm",
       "text": "Are you sure?",
-      "actions": [
+      "actions": 
+	  [
           {
             "type": "message",
             "label": "Yes",
