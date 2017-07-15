@@ -136,7 +136,7 @@ bot.on('message',function(event)
 			}
 		}
 	}
-}
+});
 
 
 // bot.on('message',function(event))
