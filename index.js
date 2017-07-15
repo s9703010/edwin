@@ -60,38 +60,97 @@ bot.on('message',function(event){
             console.log('error');   //若有錯誤，catch下來後註記在log中
         });
     }
-	if (event.message.type = 'text' && event.message.text == "飲食問題"){
-        var msg = {
-            "type": "template",
-            "altText": "您好，初次見面！",
-            "template":{
-                "type": "buttons",
-                "title": "您好，初次見面！",
-                "text": "請問您想了解飲食哪項問題呢？",
-                "actions":[
-                    {
-                        "type": "postback",
-                        "label":"我該吃什麼",
-                        "data": "#"
-                    },
-                    {
-                        "type": "postback",
-                        "label": "健身前後該吃東西嗎?",
-                        "data": "#"
-                    },
-                    {
-                        "type": "postback",
-                        "label": "計算TDEE每日總消耗熱量",
-                        "data": "#"
-                    },
-                    {
-                        "type": "postback",
-                        "label": "減脂or增肌應該如何調整飲食?",
-                        "data": "#"
-                    }
-                ]
-            }
-        }
+	if (event.message.type = 'text' && event.message.text == "飲食問題")
+	{
+		var msg =
+		{
+		  "type": "template",
+		  "altText": "this is a carousel template",
+		  "template": 
+			{
+			  "type": "carousel",
+			  "columns": 
+			  [
+				  {
+					"thumbnailImageUrl": "https://goo.gl/images/Cx5rql",
+					"title": "this is menu",
+					"text": "description",
+					"actions": 
+					[
+						{
+							"type": "postback",
+							"label": "Buy",
+							"data": "action=buy&itemid=111"
+						},
+						{
+							"type": "postback",
+							"label": "Add to cart",
+							"data": "action=add&itemid=111"
+						},
+						{
+							"type": "uri",
+							"label": "View detail",
+							"uri": "http://example.com/page/111"
+						}
+					]
+				  },
+				  {
+					"thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
+					"title": "this is menu",
+					"text": "description",
+					"actions": [
+						{
+							"type": "postback",
+							"label": "Buy",
+							"data": "action=buy&itemid=222"
+						},
+						{
+							"type": "postback",
+							"label": "Add to cart",
+							"data": "action=add&itemid=222"
+						},
+						{
+							"type": "uri",
+							"label": "View detail",
+							"uri": "http://example.com/page/222"
+						}
+					]
+				  }
+			  ]
+			}
+		}
+		// var msg = 
+		// {
+            // "type": "template",
+            // "altText": "您好，初次見面！",
+            // "template":{
+                // "type": "buttons",
+                // "title": "您好，初次見面！",
+                // "text": "請問您想了解飲食哪項問題呢？",
+                // "actions":[
+                    // {
+                        // "type": "postback",
+                        // "label":"我該吃什麼",
+                        // "data": "#"
+                    // },
+                    // {
+                        // "type": "postback",
+                        // "label": "健身前後該吃東西嗎?",
+                        // "data": "#"
+                    // },
+                    // {
+                        // "type": "postback",
+                        // "label": "計算TDEE每日總消耗熱量",
+                        // "data": "#"
+                    // },
+                    // {
+                        // "type": "postback",
+                        // "label": "減脂or增肌應該如何調整飲食?",
+                        // "data": "#"
+                    // }
+                // ]
+            // }
+        // }
         event.reply(msg).then(function(data){
             colsole.log(msg);
         }).catch(function(error){
