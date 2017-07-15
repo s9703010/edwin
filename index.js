@@ -92,7 +92,51 @@ bot.on('message',function(event){
     }
     
 });
-
+bot.on('message',function(event)
+{
+	if (event.message.type = 'text' && event.message.text == "飲食問題")
+	{
+		 var msg = 
+		{
+			"type": "template",
+			"altText": "飲食問題",
+			"template":
+			{
+				"type": "buttons",
+				"title": "您好，初次見面！",
+				"text": "請問您想了解飲食哪項問題呢？",
+				"actions":
+				[
+					{
+						"type": "postback", 
+						"label":"我該吃什麼", 
+					"data": "#"
+					},
+					{
+						"type": "postback",
+						"label": "健身前後該吃東西嗎?",
+						"data": "#"
+					},
+					{
+						"type": "postback",
+						"label": "計算TDEE每日總消耗熱量",
+						"data": "#"
+					},
+					{
+						"type": "postback",
+						"label": "減脂應該如何調整飲食?",
+						"data": "#"
+					},
+					{
+						"type": "postback",
+						"label": "增肌應該如何調整飲食?",
+						"data": "#"
+					}
+				]
+			}
+		}
+	}
+}
 
 
 // bot.on('message',function(event))
