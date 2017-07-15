@@ -20,7 +20,7 @@ app.post('/', linebotParser);
 
 //express預設是走port 3000，而heroku不是，所以以下程式碼將進行轉換
 
-var server = app.listen(process.env.PORT || 8000,function(){
+var server = app.listen(process.env.PORT || 8080,function(){
     
 var port = server.address().port;
     
@@ -98,7 +98,8 @@ bot.on('message',function(event){
 					"thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
 					"title": "健身前後該吃東西嗎",
 					"text": "飲食篇",
-					"actions": [
+					"actions": 
+					[
 						{
 							"type": "postback",
 							"label": "Buy",
@@ -120,7 +121,8 @@ bot.on('message',function(event){
 					"thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
 					"title": "計算TDEE每日總消耗熱量",
 					"text": "飲食篇",
-					"actions": [
+					"actions": 
+					[
 						{
 							"type": "postback",
 							"label": "Buy",
@@ -142,7 +144,8 @@ bot.on('message',function(event){
 					"thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
 					"title": "減脂應該如何調整飲食?",
 					"text": "飲食篇",
-					"actions": [
+					"actions": 
+					[
 						{
 							"type": "postback",
 							"label": "Buy",
@@ -164,7 +167,8 @@ bot.on('message',function(event){
 					"thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
 					"title": "增肌應該如何調整飲食?",
 					"text": "飲食篇",
-					"actions": [
+					"actions": 
+					[
 						{
 							"type": "postback",
 							"label": "Buy",
