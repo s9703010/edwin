@@ -92,7 +92,8 @@ bot.on('message',function(event){
 						"type": "postback",
 						"label": "減脂應該如何調整飲食?",
 						"data": "#"
-					// },
+					}
+					// ,
 					// {
 						// "type": "postback",
 						// "label": "增肌應該如何調整飲食?",
