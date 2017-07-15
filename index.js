@@ -44,49 +44,66 @@ if (event.message.type = 'text' && event.message.text == "我想鍛鍊"){
         
 var msg = 
 {
-	"type": "template",
-	"altText": "您好，初次見面！",
-	"template":{"type": "buttons",
-	"title": "您好，初次見面！",
-	"text": "請問您想了解哪項問題呢？",
-	"actions":
-	[
- {
-	 "type": "postback", 
-	 "label":"飲食問題", 
-	 "data": "#"
-},
- {
-	 "type": "postback",
-	 "label": "訓練問題",
-	 "data": "#"
-   }
-    ]
-     }
-        }
-var msg = 
-{
   "type": "template",
-  "altText": "this is a confirm template",
+  "altText": "this is a qution template",
   "template": 
   {
       "type": "confirm",
-      "text": "Are you sure?",
+      "text": "有哪一項問題呢?",
       "actions": 
 	  [
           {
             "type": "message",
-            "label": "Yes",
-            "text": "yes"
+            "label": "飲食問題",
+            "text": "飲食問題"
           },
           {
             "type": "message",
-            "label": "No",
-            "text": "no"
+            "label": "健身問題",
+            "text": "健身問題"
           }
       ]
   }
 }
+if (event.message.type = 'text' && event.message.text == "飲食問題"){
+        
+var msg = 
+{
+	"type": "template",
+	"altText": "飲食問題",
+	"template":{"type": "buttons",
+	"title": "您好，初次見面！",
+	"text": "請問您想了解飲食哪項問題呢？",
+	"actions":
+[
+	{
+		"type": "postback", 
+		"label":"我該吃什麼", 
+		"data": "#"
+	},
+	{
+		"type": "postback",
+		"label": "健身前後該吃東西嗎?",
+		"data": "#"
+	},
+	{
+	 "type": "postback",
+	 "label": "計算TDEE每日總消耗熱量",
+	 "data": "#"
+    },
+	{
+	 "type": "postback",
+	 "label": "減脂應該如何調整飲食?",
+	 "data": "#"
+    },
+	{
+	 "type": "postback",
+	 "label": "增肌應該如何調整飲食?",
+	 "data": "#"
+    }
+   ]
+     }
+        }
         
 event.reply(msg).then(function(data){colsole.log(msg);
 }).catch(function(error){
