@@ -20,13 +20,13 @@ app.post('/', linebotParser);
 
 //express預設是走port 3000，而heroku不是，所以以下程式碼將進行轉換
 
-// var server = app.listen(process.env.PORT || 8000,function(){
+var server = app.listen(process.env.PORT || 8080,function(){
     
-// var port = server.address().port;
+var port = server.address().port;
     
-// console.log("App now running on port", port);
+console.log("App now running on port", port);
 
-// });
+});
 
 //回復一模一樣的訊息
 bot.on('message',function(event){
@@ -114,7 +114,21 @@ bot.on('message',function(event)
 				]
 			}
 		}
-	}
+		 event.reply(msg).then(function(data){
+            colsole.log(msg);
+        }).catch(function(error){
+            console.log('error');   //若有錯誤，catch下來後註記在log中
+        });
+    }
+    else if (event.message.type = 'text'){
+        var msg = event.message.text + " 收到！";
+        event.reply(msg).then(function(data){
+            colsole.log(msg);
+        }).catch(function(error){
+            console.log('error');   //若有錯誤，catch下來後註記在log中
+        });
+    }
+	
 });
 
 
