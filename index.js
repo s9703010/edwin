@@ -37,33 +37,13 @@ console.log("App now running on port", port);
 
 //回復一模一樣的訊息
 
-bot.on('message',function(event){
+bot.on('message',function(event)
+{
     //收到通關密語後，建立一個選單讓使用者選擇想要使用的功能
     
-if (event.message.type = 'text' && event.message.text == "我想鍛鍊"){
-        
-var msg = 
+if (event.message.type = 'text' && event.message.text == "我想鍛鍊")
 {
-	"type": "template",
-	"altText": "您好，初次見面！",
-	"template":{"type": "buttons",
-	"title": "您好，初次見面！",
-	"text": "請問您想了解哪項問題呢？",
-	"actions":
-	[
- {
-	 "type": "postback", 
-	 "label":"飲食問題", 
-	 "data": "#"
-},
- {
-	 "type": "postback",
-	 "label": "訓練問題",
-	 "data": "#"
-   }
-    ]
-     }
-        }
+        
 var msg = 
 {
   "type": "template",
@@ -86,6 +66,7 @@ var msg =
           }
       ]
   }
+}
 }
 if (event.message.type = 'text' && event.message.text == "飲食問題"){
         
@@ -123,17 +104,17 @@ var msg =
 	 "label": "增肌應該如何調整飲食?",
 	 "data": "#"
     }
-   ]
+]
      }
-        }
-        
+}
+}   
 event.reply(msg).then(function(data){colsole.log(msg);
 }).catch(function(error){
             
 console.log('error');   //若有錯誤，catch下來後註記在log中
         });
 
-    }
+ }
     else if (event.message.type = 'text'){
         var msg = event.message.text + " 收到！";
 
