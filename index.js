@@ -71,6 +71,48 @@ bot.on('message',function(event){
     }
     
 });
+bot.on('message',function(event){
+    //收到通關密語後，建立一個選單讓使用者選擇想要使用的功能
+    if (event.message.type = 'text' && event.message.text == "飲食問題"){
+        var msg = 
+		{
+			"type": "template",
+			"altText": "this is a qution template",
+			"template": 
+			{
+				"type": "confirm",
+				"text": "有哪一項問題呢?",
+				"actions": 
+				[
+					{
+						"type": "message",
+						"label": "飲食問題",
+						"text": "飲食問題"
+					},
+					{
+						"type": "message",
+						"label": "訓練問題",
+						"text": "訓練問題"
+					}
+				]	
+			}
+		}
+        event.reply(msg).then(function(data){
+            colsole.log(msg);
+        }).catch(function(error){
+            console.log('error');   //若有錯誤，catch下來後註記在log中
+        });
+    }
+    else if (event.message.type = 'text'){
+        var msg = event.message.text + " 收到！";
+        event.reply(msg).then(function(data){
+            colsole.log(msg);
+        }).catch(function(error){
+            console.log('error');   //若有錯誤，catch下來後註記在log中
+        });
+    }
+    
+});
 bot.on('message',function(event)
 {
 	if (event.message.type = 'text' && event.message.text == "飲食問題")
