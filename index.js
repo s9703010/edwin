@@ -44,6 +44,28 @@ if (event.message.type = 'text' && event.message.text == "我想鍛鍊"){
         
 var msg = 
 {
+	"type": "template",
+	"altText": "您好，初次見面！",
+	"template":{"type": "buttons",
+	"title": "您好，初次見面！",
+	"text": "請問您想了解哪項問題呢？",
+	"actions":
+	[
+ {
+	 "type": "postback", 
+	 "label":"飲食問題", 
+	 "data": "#"
+},
+ {
+	 "type": "postback",
+	 "label": "訓練問題",
+	 "data": "#"
+   }
+    ]
+     }
+        }
+var msg = 
+{
   "type": "template",
   "altText": "this is a qution template",
   "template": 
