@@ -67,16 +67,21 @@ bot.on('message',function(event){
             "template":{
                 "type": "buttons",
                 "title": "您好，初次見面！",
-                "text": "請問您想使用哪一項功能呢？",
+                "text": "請問您想了解飲食哪項問題呢？",
                 "actions":[
                     {
                         "type": "postback",
-                        "label":"知識詢問",
+                        "label":"我該吃什麼",
                         "data": "#"
                     },
                     {
                         "type": "postback",
-                        "label": "鍛鍊姿勢查詢",
+                        "label": "健身前後該吃東西嗎?",
+                        "data": "#"
+                    },
+                    {
+                        "type": "postback",
+                        "label": "計算TDEE每日總消耗熱量",
                         "data": "#"
                     }
                 ]
