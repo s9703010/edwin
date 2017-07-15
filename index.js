@@ -55,27 +55,6 @@ bot.on('message',function(event){
 				]	
 			}
 		}
-		// {
-            // "type": "template",
-            // "altText": "您好，初次見面！",
-            // "template":{
-                // "type": "buttons",
-                // "title": "您好，初次見面！",
-                // "text": "請問您想使用哪一項功能呢？",
-                // "actions":[
-                    // {
-                        // "type": "postback",
-                        // "label":"知識詢問",
-                        // "data": "#"
-                    // },
-                    // {
-                        // "type": "postback",
-                        // "label": "鍛鍊姿勢查詢",
-                        // "data": "#"
-                    // }
-                // ]
-            // }
-        // }
         event.reply(msg).then(function(data){
             colsole.log(msg);
         }).catch(function(error){
