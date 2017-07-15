@@ -86,7 +86,7 @@ bot.on('message',function(event){
                     },
                     {
                         "type": "postback",
-                        "label": "減脂應該如何調整飲食?",
+                        "label": "減脂or增肌應該如何調整飲食?",
                         "data": "#"
                     }
                 ]
@@ -98,48 +98,7 @@ bot.on('message',function(event){
             console.log('error');   //若有錯誤，catch下來後註記在log中
         });
     }
-	// else if (event.message.type = 'text' && event.message.text == "飲食問題")
-	// {
-		 // var meg = 
-		// {
-			// "type": "template",
-			// "altText": "飲食問題",
-			// "template":
-			// {
-				// "type": "buttons",
-				// "title": "您好，初次見面！",
-				// "text": "請問您想了解飲食哪項問題呢？",
-				// "actions":
-				// [
-					// {
-						// "type": "postback", 
-						// "label":"我該吃什麼", 
-						// "data": "#"
-					// },
-					// {
-						// "type": "postback",
-						// "label": "健身前後該吃東西嗎?",
-						// "data": "#"
-					// },
-					// {
-						// "type": "postback",
-						// "label": "計算TDEE每日總消耗熱量",
-						// "data": "#"
-					// },
-					// {
-						// "type": "postback",
-						// "label": "減脂應該如何調整飲食?",
-						// "data": "#"
-					// },
-					// {
-						// "type": "postback",
-						// "label": "增肌應該如何調整飲食?",
-						// "data": "#"
-					// }
-				// ]
-			// }
-		// }
-	// }
+	
     else if (event.message.type = 'text')
 	{
         var msg = event.message.text + " 收到！";
