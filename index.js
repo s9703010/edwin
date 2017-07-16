@@ -109,6 +109,11 @@ bot.on('message',function(event){
 							"type": "postback",
 							"label": "健身後營養補充",
 							"data": "action=add&itemid=222"
+						},
+						{
+							"type": "postback",
+							"label": "健身後營養補充",
+							"data": "action=add&itemid=222"
 						}
 					]
 				  },
@@ -126,6 +131,11 @@ bot.on('message',function(event){
 						{
 							"type": "postback",
 							"label": "如何計算TDEE",
+							"data": "action=add&itemid=222"
+						},
+						{
+							"type": "postback",
+							"label": "健身後營養補充",
 							"data": "action=add&itemid=222"
 						}
 					]
