@@ -113,7 +113,7 @@ bot.on('message',function(event){
 						{
 							"type": "postback",
 							"label": "返回",
-							"data": "我想鍛鍊"
+							"data": "action=add&itemid=222"
 						}
 					]
 				  },
@@ -136,7 +136,7 @@ bot.on('message',function(event){
 						{
 							"type": "postback",
 							"label": "返回",
-							"data": "我想鍛鍊"
+							"data": "action=add&itemid=222"
 						}
 					]
 				  },
