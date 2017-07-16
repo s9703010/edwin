@@ -111,7 +111,7 @@ bot.on('message',function(event){
 							"data": "action=add&itemid=222"
 						},
 						{
-							"type": "postback",
+							"type": "message",
 							"label": "返回",
 							"text": "我想鍛鍊"
 						}
@@ -134,7 +134,7 @@ bot.on('message',function(event){
 							"data": "action=add&itemid=222"
 						},
 						{
-							"type": "postback",
+							"type": "message",
 							"label": "返回",
 							"text": "我想鍛鍊"
 						}
