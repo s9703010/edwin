@@ -90,7 +90,7 @@ bot.on('message',function(event){
 						{
 							"type": "postback",
 							"label": "脂肪是什麼?",
-							"data": "#"
+							"data": "action=add&itemid=222"
 						}
 					]
 				  },
@@ -149,7 +149,7 @@ bot.on('message',function(event){
 						{
 							"type": "postback",
 							"label": "減脂時營養素控制",
-							"data": "#"
+							"data": "action=add&itemid=222"
 						}
 					]
 				  },
@@ -172,7 +172,7 @@ bot.on('message',function(event){
 						{
 							"type": "postback",
 							"label": "增肌時營養素控制",
-							"data": "#"
+							"data": "action=add&itemid=222"
 						}
 					]
 				  }
