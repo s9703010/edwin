@@ -112,8 +112,8 @@ bot.on('message',function(event){
 						},
 						{
 							"type": "postback",
-							"label": "健身後營養補充",
-							"data": "action=add&itemid=222"
+							"label": "返回",
+							"text": "我想鍛鍊"
 						}
 					]
 				  },
@@ -135,8 +135,8 @@ bot.on('message',function(event){
 						},
 						{
 							"type": "postback",
-							"label": "健身後營養補充",
-							"data": "action=add&itemid=222"
+							"label": "返回",
+							"text": "我想鍛鍊"
 						}
 					]
 				  },
