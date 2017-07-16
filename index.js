@@ -79,18 +79,18 @@ bot.on('message',function(event){
 					[
 						{
 							"type": "postback",
-							"label": "Buy",
+							"label": "蛋白質是什麼?",
 							"data": "action=buy&itemid=111"
 						},
 						{
 							"type": "postback",
-							"label": "Add to cart",
+							"label": "碳水化合物是什麼?",
 							"data": "action=add&itemid=111"
 						},
 						{
-							"type": "uri",
-							"label": "View detail",
-							"uri": "http://example.com/page/111"
+							"type": "postback",
+							"label": "脂肪是什麼?",
+							"data": "#"
 						}
 					]
 				  },
@@ -102,18 +102,13 @@ bot.on('message',function(event){
 					[
 						{
 							"type": "postback",
-							"label": "Buy",
+							"label": "健身前營養補充",
 							"data": "action=buy&itemid=222"
 						},
 						{
 							"type": "postback",
-							"label": "Add to cart",
+							"label": "健身後營養補充",
 							"data": "action=add&itemid=222"
-						},
-						{
-							"type": "uri",
-							"label": "View detail",
-							"uri": "http://example.com/page/222"
 						}
 					]
 				  },
@@ -125,18 +120,13 @@ bot.on('message',function(event){
 					[
 						{
 							"type": "postback",
-							"label": "Buy",
+							"label": "TDEE是什麼?",
 							"data": "action=buy&itemid=222"
 						},
 						{
 							"type": "postback",
-							"label": "Add to cart",
+							"label": "如何計算TDEE",
 							"data": "action=add&itemid=222"
-						},
-						{
-							"type": "uri",
-							"label": "View detail",
-							"uri": "http://example.com/page/222"
 						}
 					]
 				  },
@@ -148,18 +138,18 @@ bot.on('message',function(event){
 					[
 						{
 							"type": "postback",
-							"label": "Buy",
+							"label": "蛋白質的攝取量",
 							"data": "action=buy&itemid=222"
 						},
 						{
 							"type": "postback",
-							"label": "Add to cart",
+							"label": "減脂時熱量控制",
 							"data": "action=add&itemid=222"
 						},
 						{
-							"type": "uri",
-							"label": "View detail",
-							"uri": "http://example.com/page/222"
+							"type": "postback",
+							"label": "減脂時營養素控制",
+							"data": "#"
 						}
 					]
 				  },
@@ -171,18 +161,18 @@ bot.on('message',function(event){
 					[
 						{
 							"type": "postback",
-							"label": "Buy",
+							"label": "蛋白質攝取量",
 							"data": "action=buy&itemid=222"
 						},
 						{
 							"type": "postback",
-							"label": "Add to cart",
+							"label": "增肌時熱量控制",
 							"data": "action=add&itemid=222"
 						},
 						{
-							"type": "uri",
-							"label": "View detail",
-							"uri": "http://example.com/page/222"
+							"type": "postback",
+							"label": "增肌時營養素控制",
+							"data": "#"
 						}
 					]
 				  }
