@@ -80,7 +80,7 @@ bot.on('message',function(event){
 						{
 							"type": "postback",
 							"label": "蛋白質是什麼?",
-							"data": "action=buy&itemid=111"
+							"text": "action=buy&itemid=111"
 						},
 						{
 							"type": "postback",
