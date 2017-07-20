@@ -209,115 +209,72 @@ bot.on('message',function(event){
 			  [
 				  {
 					"thumbnailImageUrl": "https://goo.gl/images/Cx5rql",
-					"title": "我該吃甚麼?",
-					"text": "飲食篇",
+					"title": "重訓時間與動作",
+					"text": "訓練篇",
 					"actions": 
 					[
 						{
 							"type": "postback",
-							"label": "蛋白質是什麼?",
+							"label": "重訊多久才好?",
 							"data": "action=buy&itemid=111"
 						},
 						{
 							"type": "postback",
-							"label": "碳水化合物是什麼?",
+							"label": "同一肌肉群要做多少動作?",
 							"data": "action=add&itemid=111"
+						}
+					]
+				  },
+				  {
+					"thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
+					"title": "強度建議",
+					"text": "訓練篇",
+					"actions": 
+					[
+						{
+							"type": "postback",
+							"label": "重量多重適合自己",
+							"data": "action=buy&itemid=222"
 						},
 						{
 							"type": "postback",
-							"label": "脂肪是什麼?",
+							"label": "要舉多快才好",
 							"data": "action=add&itemid=222"
 						}
 					]
 				  },
 				  {
 					"thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
-					"title": "健身前後該吃東西嗎",
-					"text": "飲食篇",
+					"title": "動作組數建議",
+					"text": "訓練篇",
 					"actions": 
 					[
 						{
 							"type": "postback",
-							"label": "健身前營養補充",
+							"label": "一組動作該做幾下?",
 							"data": "action=buy&itemid=222"
 						},
 						{
 							"type": "postback",
-							"label": "健身後營養補充",
+							"label": "一個動作該做幾組?",
 							"data": "action=add&itemid=222"
+						}
+					]
+				  },
+				  {
+					"thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
+					"title": "安全問題",
+					"text": "訓練篇",
+					"actions": 
+					[
+						{
+							"type": "postback",
+							"label": "需要有人在旁邊看嗎",
+							"data": "action=buy&itemid=222"
 						},
 						{
 							"type": "postback",
 							"label": "返回",
-							"data": "action=add&itemid=222"
-						}
-					]
-				  },
-				  {
-					"thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
-					"title": "計算TDEE每日總消耗熱量",
-					"text": "飲食篇",
-					"actions": 
-					[
-						{
-							"type": "postback",
-							"label": "TDEE是什麼?",
-							"data": "action=buy&itemid=222"
-						},
-						{
-							"type": "postback",
-							"label": "如何計算TDEE",
-							"data": "action=add&itemid=222"
-						},
-						{
-							"type": "postback",
-							"label": "返回",
-							"data": "action=add&itemid=222"
-						}
-					]
-				  },
-				  {
-					"thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
-					"title": "減脂應該如何調整飲食?",
-					"text": "飲食篇",
-					"actions": 
-					[
-						{
-							"type": "postback",
-							"label": "蛋白質的攝取量",
-							"data": "action=buy&itemid=222"
-						},
-						{
-							"type": "postback",
-							"label": "減脂時熱量控制",
-							"data": "action=add&itemid=222"
-						},
-						{
-							"type": "postback",
-							"label": "減脂時營養素控制",
-							"data": "action=add&itemid=222"
-						}
-					]
-				  },
-				  {
-					"thumbnailImageUrl": "https://example.com/bot/images/item2.jpg",
-					"title": "增肌應該如何調整飲食?",
-					"text": "飲食篇",
-					"actions": 
-					[
-						{
-							"type": "postback",
-							"label": "蛋白質攝取量",
-							"data": "action=buy&itemid=222"
-						},
-						{
-							"type": "postback",
-							"label": "增肌時熱量控制",
-							"data": "action=add&itemid=222"
-						},
-						{
-							"type": "postback",
-							"label": "增肌時營養素控制",
 							"data": "action=add&itemid=222"
 						}
 					]
